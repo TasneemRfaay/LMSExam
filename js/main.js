@@ -1,4 +1,4 @@
-const qNumber = 10;
+const qNumber = 7;
 
 const progressContainer = document.querySelector(".progress-container");
 const prev = document.getElementById("prev");
@@ -83,14 +83,6 @@ const update = () => {
     next.disabled = false;
   }
 };
-
-// ----------------------choose-----------------------------
-$("#qustions p").click(function () {
-  $(this).css("border", "2px solid  #3498db");
-  $(this).css({ backgroundColor: "#aca4a4" });
-  $(this).siblings().css("border", "none");
-  $(this).siblings().css({ backgroundColor: "transparent" });
-});
 
 // --------------create question----------------------
 let choose = document.getElementById("qustionChoose");
@@ -240,3 +232,12 @@ function ChooseQuestion(type) {
 }
 
 ChooseQuestion("#qustionChoose");
+// ----------------------choose-----------------------------
+$(choose).click(function (e) {
+  $(this).css("border", "2px solid  #3498db");
+  $(this).css({ backgroundColor: "#aca4a4" });
+  $(this).siblings().css("border", "none");
+  $(this).siblings().css({ backgroundColor: "transparent" });
+  console.log($(e.target));
+});
+// console.log($(choose #options));

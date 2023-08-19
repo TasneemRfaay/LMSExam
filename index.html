@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="Ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" /> -->
+    <title>Exams</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body class="bg-light">
+    <nav class="navbar navbar-expand-sm">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="imgs/Esol logo.svg" alt="expert-logo" />
+          الحلول الخبيره
+        </a>
+      </div>
+    </nav>
+    <div id="nav2" class="px-5 py-2">
+      <h2 class="mx-5 px-5">KG-اختبار اللغه الانجليزيه</h2>
+    </div>
+
+    <div id="home" class="px-5 py-2">
+      <h5 class="mx-5 px-5">نوع الاختبار : <span>واجب مدرسي </span></h5>
+      <div id="qusetionTypes" class="tabs mx-5 px-5 mt-4">
+        <ul>
+          <li
+            class="fa-solid fa-file-lines bg-white border-1 shadow-sm mx-3 active"
+          >
+            <a href="#qustionChoose" class="tabTitle">اختر</a>
+          </li>
+          <li class="fa-solid fa-file-lines bg-white border-1 shadow-sm mx-3">
+            <a href="#trueOrFalse" class="tabTitle">صح أم خطأ</a>
+          </li>
+          <li class="fa-solid fa-file-lines bg-white border-1 shadow-sm mx-3">
+            <a href="#complete" class="tabTitle">أكمل</a>
+          </li>
+          <li class="fa-solid fa-file-lines bg-white border-1 shadow-sm mx-3">
+            <a href="#completeWithDetalis" class="tabTitle">مقالي</a>
+          </li>
+          <li class="fa-solid fa-file-lines bg-white border-1 shadow-sm mx-3">
+            <a href="#matching" class="tabTitle">توصيل</a>
+          </li>
+        </ul>
+      </div>
+
+      <div id="progressSteps" class="choose mt-5">
+        <div class="container w-50 m-auto text-center py-2 shadow-sm">
+          <div class="progress-container m-auto">
+            <div class="progress" id="progress"></div>
+            <!-- <div class="circle active">
+              <i class="fa fa-file-lines"></i>
+            </div>
+           
+            <div class="circle"><i class="fa fa-file-lines"></i></div>
+            <div class="circle"><i class="fa fa-file-lines"></i></div>
+            <div class="circle"><i class="fa fa-check-circle"></i></div> -->
+          </div>
+        </div>
+        <div class="content">
+          <!-- -------------------------- all questions------------------------------- -->
+          <div id="qustions" class="container bg-white mt-4 shadow-lg p-4">
+            <!-- ------------------------Multiple choice ---------------- -->
+            <div id="qustionChoose" class="qustions mx-5 choose"></div>
+
+            <!-- -----------------------true or false ---------------------- -->
+            <div class="qustions mx-5 d-none rOw" id="trueOrFalse"></div>
+
+            <!-- ------------------------complete---------------------- -->
+            <div class="qustions mx-5 d-none complete" id="complete"></div>
+            <!-- ------------------complete with detalis--------------------- -->
+            <div
+              class="qustions mx-5 d-none essay"
+              id="completeWithDetalis"
+            ></div>
+
+            <!-- -------------------matching------------- -->
+            <div class="qustions mx-5 d-none matching" id="matching"></div>
+          </div>
+        </div>
+      </div>
+
+      <div id="buttons" class="">
+        <button class="btn" id="prev" disabled>السابق</button>
+        <button class="btn" id="next">التالي</button>
+      </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
