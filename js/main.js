@@ -1,4 +1,4 @@
-const qNumber = 7;
+const qNumber = 5;
 
 const progressContainer = document.querySelector(".progress-container");
 const prev = document.getElementById("prev");
